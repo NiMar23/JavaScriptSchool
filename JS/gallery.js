@@ -1,27 +1,17 @@
 /*Name this external file gallery.js*/
 
 function upDate(previewPic) {
+  /* define the variable 'element' for the div 'image'*/
   var element = document.getElementById("image");
+  /*use the variable 'element' and update the inner HTML to show the alt text of the picture*/ 
   element.innerHTML = previewPic.alt;
+  /* update the background image of the div with the image that the mouse is currently pointing at*/
   element.style.cssText+=`background-image:url(${previewPic.src})`;
 }
-   /* In this function you should 
-      1) change the url for the background image of the div with the id = "image" 
-      to the source file of the preview image
-      
-      2) Change the text  of the div with the id = "image" 
-      to the alt text of the preview image 
-      */
-    
-  
+   
 function unDo(){
+  /*change the text of the div back to the original text*/
   document.getElementById("image").innerHTML='Hover over an image below to display here.';
+  /*remove the background image to show the original background*/
   document.getElementById("image").style.backgroundImage = '';
-}
-/*In this function you should 
-      1) Update the url for the background image of the div with the id = "image" 
-      back to the orginal-image.  You can use the css code to see what that original URL was
-      
-      2) Change the text  of the div with the id = "image" 
-      back to the original text.  You can use the html code to see what that original text was*/ 
-          
+}          

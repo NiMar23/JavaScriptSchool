@@ -17,7 +17,7 @@ function unDo(){
 }
 
 function loadtabindex() {
-  currimg = document.querySelectorAll(".preview img")
+  currimg = document.querySelectorAll(".preview")
     for (var i = 0; i < currimg.length; i++) {
     console.log("Number" + i)
     currimg[i].setAttribute("tabindex", "0")

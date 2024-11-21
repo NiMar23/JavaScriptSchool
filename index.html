@@ -8,15 +8,15 @@
 </head>
 <body onload="loadtabindex()">
 	
-	<div id = "image">
+	<div id = "image" onmouseover="loadtabindex()">
 		Hover over an image below to display here.
 	</div>
-		<img class = "preview" alt = "Cat sleeping in shoe" src = "Images/cat_in_shoe.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-		<img class = "preview" alt = "Cat in laundry basket" src = "Images/cat_laundry_basket.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+		<img class = "preview" alt = "Cat sleeping in shoe" src = "Images/cat_in_shoe.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)">
+		<img class = "preview" alt = "Cat in laundry basket" src = "Images/cat_laundry_basket.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)">
 		<img class = "preview" src = "Images/cat_phone.jpg" alt = "cat with phone" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)">
-		<img class = "preview" src = "Images/cat_garden_action.jpg" alt = "cat in the garden" onmouseover = "upDate(this)" onmouseout = "unDo()">
-		<img class = "preview" src = "Images/cat_yoga.JPG" alt = "cat doing yoga" onmouseover = "upDate(this)" onmouseout = "unDo()">
-		<img class = "preview" src = "Images/cat_sofa_outside.jpg" alt = "cat sleeping" onmouseover = "upDate(this)" onmouseout = "unDo()">
+		<img class = "preview" src = "Images/cat_garden_action.jpg" alt = "cat in the garden" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)">
+		<img class = "preview" src = "Images/cat_yoga.JPG" alt = "cat doing yoga" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)">
+		<img class = "preview" src = "Images/cat_sofa_outside.jpg" alt = "cat sleeping" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
 
 </body>
 </html>

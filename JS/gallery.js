@@ -14,4 +14,12 @@ function unDo(){
   document.getElementById("image").innerHTML='Hover over an image below to display here.';
   /*remove the background image to show the original background*/
   document.getElementById("image").style.backgroundImage = '';
-}          
+}
+
+function loadtabindex() {
+  currimg = document.querySelectorAll(".preview img")
+    for (var i = 0; i < currimg.length; i++) {
+    console.log("Number" + i)
+    currimg[i].setAttribute("tabindex", "0")
+    }
+  }
